@@ -1,0 +1,172 @@
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    height: 80vh;
+    width: 80vw;
+    background-color: aliceblue;
+    /* font-size: 500px; */
+    gap: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cbox{
+    height: 40vh;
+    width: 30vw;
+    background-color: black;
+    object-fit: cover;
+    /* overflow: hidden; */
+    cursor: pointer;
+  
+}
+#im{
+    height: 40vh;
+    width: 30vw;
+    padding-top: 0px;
+    /* margin-top: -7vh; */
+    object-fit: contain;
+    /* overflow: hidden; */
+    /* margin-left: 10px; */
+    
+}
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 8vw;
+    color: black;
+    
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    color: black;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    /* font-size: 2vw; */
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  button{
+    color: white;
+    /* font-size: 2vw; */
+  }
+  svg{
+    color: white;
+    /* border-color: white; */
+  }
+
+
+  @media (max-width: 768px) {
+    .container{
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  .box{
+      height: 80vh;
+      width: 80vw;
+      background-color: aliceblue;
+      /* font-size: 500px; */
+      gap: 10vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  .cbox{
+      height: 30vh;
+      width: 40vw;
+      background-color: black;
+      object-fit: cover;
+      /* overflow: hidden; */
+      cursor: pointer;
+    
+  }
+  #im{
+      height: 40vh;
+      width: 30vw;
+      padding-top: 0px;
+      margin-top: -7vh;
+      object-fit: contain;
+      /* overflow: hidden; */
+      margin-left: 10px;
+      
+  }
+  .cta {
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin-left: 10px;
+      color: black;
+      
+    }
+    
+    .cta span {
+      padding-bottom: 7px;
+      letter-spacing: 4px;
+      font-size: 14px;
+      padding-right: 15px;
+      text-transform: uppercase;
+      color: black;
+    }
+    
+    .cta svg {
+      transform: translateX(-8px);
+      transition: all 0.3s ease;
+    }
+    
+    .cta:hover svg {
+      transform: translateX(0);
+    }
+    
+    .cta:active svg {
+      transform: scale(0.9);
+    }
+
+}
