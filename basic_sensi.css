@@ -166,7 +166,6 @@ li {
     object-fit: cover;
     border-radius: 5px;
 }
-
 @media screen and (max-width: 768px) {
     .full_page {
         flex-direction: column;
@@ -179,11 +178,11 @@ li {
     }
 
     .card {
-        height: 420px;
+        height: 480px;
     }
 
     .card2 {
-        height: 380px;
+        height: 440px;
     }
 
     .card-img {
@@ -197,6 +196,14 @@ li {
     .card-subtitle, .card-subtitle2 {
         font-size: 1em;
     }
+
+    .card-footer {
+        margin-top: -20px;
+    }
+
+    .card-footer2 {
+        margin-top: -20px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -205,19 +212,25 @@ li {
     }
 
     .card {
-        height: 400px;
+        height: 460px;
     }
 
     .card2 {
-        height: 360px;
+        height: 420px;
     }
 
     .card-img {
         height: 150px;
     }
+
+    .card-footer {
+        margin-top: -20px;
+    }
+
+    .card-footer2 {
+        margin-top: -20px;
+    }
 }
-
-
 
 
 
